@@ -8,3 +8,6 @@ Basically, Hacks.
 The name of the mod is an homage to a friend, for anyone who's wondering.
 
 I want to see how deep I can go before slipping my foot and fall to my death.
+
+## Learning Notes
+
