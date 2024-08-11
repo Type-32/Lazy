@@ -12,6 +12,6 @@ public class HungerResist extends LazyModule {
 
         HungerManager hungerManager = client.player.getHungerManager();
         hungerManager.setFoodLevel(20);
-        hungerManager.setSaturationLevel(5.0f);
+        hungerManager.setSaturationLevel(10.0f);
     }
 }

@@ -1,6 +1,7 @@
 package cn.crtlprototypestudios.lazy.client;
 
 import cn.crtlprototypestudios.lazy.Lazy;
+import cn.crtlprototypestudios.lazy.client.foundation.modules.active.HealthLock;
 import cn.crtlprototypestudios.lazy.config.LazyConfig;
 import cn.crtlprototypestudios.lazy.client.foundation.modules.active.EntityDetector;
 import cn.crtlprototypestudios.lazy.client.foundation.modules.auto.AutoFish;
@@ -15,6 +16,7 @@ public class LazyClient implements ClientModInitializer {
     private static EntityDetector entityDetector;
     private static HungerResist hungerResist;
     private static AutoHeal autoHeal;
+    private static HealthLock healthLock;
 
     @Override
     public void onInitializeClient() {
@@ -23,6 +25,7 @@ public class LazyClient implements ClientModInitializer {
         entityDetector = new EntityDetector();
         hungerResist = new HungerResist();
         autoHeal = new AutoHeal();
+        healthLock = new HealthLock();
 
         ClientTickEvents.END_CLIENT_TICK.register(this::onClientTick);
     }
@@ -33,6 +36,7 @@ public class LazyClient implements ClientModInitializer {
             entityDetector.tick(client);
             hungerResist.tick(client);
             autoHeal.tick(client);
+            healthLock.tick(client);
         }
     }
 }

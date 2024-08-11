@@ -4,6 +4,7 @@
   "package": "cn.crtlprototypestudios.lazy.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PlayerDamageAtttributeMixin",
     "ReachAttributeMixin"
   ],
   "injectors": {

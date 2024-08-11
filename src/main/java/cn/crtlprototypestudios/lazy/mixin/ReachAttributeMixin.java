@@ -10,12 +10,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(PlayerEntity.class)
 public class ReachAttributeMixin {
     @Inject(method = "getEntityInteractionRange", at = @At("RETURN"), cancellable = true)
-    private void getEntityInteractionRange(CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(Lazy.getConfig().reachDistance);
+    private void getEntityInteractionRange(CallbackInfoReturnable<Double> cir) {
+        cir.setReturnValue((double) Lazy.getConfig().reachDistance);
     }
 
     @Inject(method = "getBlockInteractionRange", at = @At("RETURN"), cancellable = true)
-    private void getBlockInteractionRange(CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(Lazy.getConfig().reachDistance);
+    private void getBlockInteractionRange(CallbackInfoReturnable<Double> cir) {
+        cir.setReturnValue((double) Lazy.getConfig().reachDistance);
     }
 }
