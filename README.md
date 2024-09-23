@@ -11,3 +11,8 @@ I want to see how deep I can go before slipping my foot and fall to my death.
 
 ## Learning Notes
 
+As it turns out, it's not that simple, which is what I expected in the first place.
+
+I'm not going to go down further in developing this mod because I haven't got the time to do so.
+
+Basically, don't use hacks in games. Play fairly.
